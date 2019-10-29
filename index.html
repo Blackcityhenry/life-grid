@@ -21,10 +21,10 @@
           <v-spacer></v-spacer>
           <v-btn text @click="showModal = true">Change DOB</v-btn>
         </v-app-bar>
-        <v-container fluid fill-height class="align-end">
+        <v-container fluid fill-height class="align-start">
           <div class="life-grids-container">
             <div v-for="i in 960" class="life-grid blue lighten-4">
-              <div class="painted" :class="i <= progress ? 'blue':''"></div>
+              <div class="painted" :class="[i <= progress ? 'blue' : '' , i <= sleep ? 'sleep' : '']"></div>
             </div>
           </div>
         </v-container>

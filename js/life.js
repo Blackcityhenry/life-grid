@@ -5,6 +5,7 @@ var life = new Vue(
     data: {
       dob: null,
       error: false,
+      sleep: 320,
       showModal: true
     },
     beforeMount(){

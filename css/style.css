@@ -10,9 +10,17 @@
   grid-gap: 3px;
 }
 
-.painted{
+.life-grid{
   padding-bottom: 100%;
+  position: relative;
+}
+
+.painted{
+  position: absolute;
+  width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
 }
 
 @media only screen and (max-width: 1200px){
